@@ -7,8 +7,41 @@ body{
     height: 99vh;
     width: 100vw;
     position: absolute;
+    z-index: -1;
     top: 0;
-    left: 0;
+    lefst: 0;
     right: 0;
     bottom: 0;
+}
+#heroArea {
+    min-height: 99vh;
+}
+header{
+    min-height: 65px;
+    background-color: #000;
+}
+#innterHero{
+min-height: 80vh;
+}
+#heroMiddle{
+    min-height: 100%;
+    width: 140;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.circleAsLogo{
+    height: 125px;
+    width: 125px;
+    border-radius: 50%;
+    border: solid #121212 4px;
+}
+
+.leftArrowHighContainer{
+    height: 350px;
+    background: rgba(0,0,0,0.1);
+    min-width: calc((80vw - 100px) / 2);
+
 }
