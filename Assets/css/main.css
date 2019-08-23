@@ -41,7 +41,44 @@ min-height: 80vh;
 
 .leftArrowHighContainer{
     height: 350px;
-    background: rgba(0,0,0,0.1);
+    flex-direction: column;
+    background: rgba(0,0,0,0.001);
     min-width: calc((80vw - 100px) / 2);
+    transition: all 0.3s;
+}
 
+
+.anotherDivInSideContainer{
+    background-color: #000;
+    height: 0px;
+    width: 100%;
+    transition: all 0.3s;
+}
+.leftArrowHighContainer:hover{
+    background: rgba(0,0,0,0.15);
+}
+.leftArrowHighContainer:hover
+.anotherDivInSideContainer{
+    height: 60px;
+}
+.textDivInSideContainer{
+    transition: all 0.3s;
+}
+.leftArrowHighContainer:hover
+.textDivInSideContainerLeft{
+    transform: translateX(250%)
+}
+
+.leftArrowHighContainer:hover
+.textDivInSideContainerRight{
+    transform: translateX(-250%)
+}
+
+.MenuIcon{
+    height: 40px;
+    width: 120px;
+    background: url('../Images/list.svg');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
 }
