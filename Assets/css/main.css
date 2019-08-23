@@ -18,7 +18,7 @@ body{
 }
 header{
     min-height: 65px;
-    background-color: #000;
+    /* background-color: #000; */
 }
 #innterHero{
 min-height: 80vh;
@@ -75,10 +75,39 @@ min-height: 80vh;
 }
 
 .MenuIcon{
-    height: 40px;
-    width: 120px;
+    height: 30px;
+    width: 50px;
     background: url('../Images/list.svg');
     background-repeat: no-repeat;
     background-size: contain;
+    background-position: center;
+}
+.headerMenuCont{
+    cursor: pointer;
+    background-color: rgba(0,0,0,0.001);
+    transition: all 0.2s;
+}
+.headerMenuCont:hover{
+    background-color: rgba(0,0,0,0.05);
+}
+.headerMenuCont h5{
+    opacity: 0;
+    position: relative;
+    transform: translateX(-30px);
+    transition: transform 0.4s linear, opacity 0.2s ease-out;
+}
+.headerMenuCont:hover h5{
+    opacity: 1;
+    position: relative;
+    transform: translateX(0px);
+    transition: all 0.2s ease-out;
+}
+
+.socialMediaIcon{
+    height: 23px;
+    width: 23px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    opacity: 0.8;
     background-position: center;
 }
