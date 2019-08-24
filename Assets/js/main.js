@@ -4,3 +4,37 @@ $('.headerMenuCont').click(()=>{
 $('#menuExitIcon').click(()=>{
     $('#MenuContainer').toggleClass('menuContainerActive');
 });
+function setEventsForArrowHighContaineers(selector,anotherSelector){
+
+    $(selector).mouseenter(()=>{
+        anime({
+            targets:selector,
+            backgroundColor:'#121212',
+            color:'#ffffff',
+            duration:300
+        });
+        anime({
+            targets:anotherSelector,
+            translateY:500,
+            opacity:0,
+            duration:150
+        });
+    });
+    $(selector).mouseleave(()=>{
+       anime({
+           targets:selector,
+           backgroundColor:'#ffffff',
+           color:'#121212',
+           duration:300
+       });
+       anime({
+        targets:anotherSelector,
+        translateY:0,
+        opacity:1,
+        duration:150
+    });
+   });
+
+}
+setEventsForArrowHighContaineers('.leftArrowHighContainerLeft','.leftArrowHighContainerRight');
+setEventsForArrowHighContaineers('.leftArrowHighContainerRight','.leftArrowHighContainerLeft');

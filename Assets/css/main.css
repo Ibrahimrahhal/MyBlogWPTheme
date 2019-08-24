@@ -45,11 +45,12 @@ min-height: 80vh;
     background: rgba(0,0,0,0.001);
     min-width: calc((80vw - 100px) / 2);
     transition: all 0.3s;
+    cursor: pointer;
+    font-weight: bolder;
 }
 
 
 .anotherDivInSideContainer{
-    background-color: #000;
     height: 0px;
     width: 100%;
     transition: all 0.3s;
@@ -61,17 +62,19 @@ min-height: 80vh;
 .anotherDivInSideContainer{
     height: 60px;
 }
-.textDivInSideContainer{
+.textDivInSideContainer .imgAndUrlWillBeInlineCss{
     transition: all 0.3s;
 }
 .leftArrowHighContainer:hover
-.textDivInSideContainerLeft{
-    transform: translateX(250%)
+.textDivInSideContainerLeft .imgAndUrlWillBeInlineCss{
+    transform: translateX(185%);
+    opacity: 0;
 }
 
 .leftArrowHighContainer:hover
-.textDivInSideContainerRight{
-    transform: translateX(-250%)
+.textDivInSideContainerRight .imgAndUrlWillBeInlineCss{
+    transform: translateX(-185%);
+    opacity: 0;
 }
 
 .MenuIcon{
@@ -148,4 +151,17 @@ min-height: 80vh;
 
 #menuExitIcon:hover{
     opacity: 1;
+}
+
+body{
+    overflow: hidden;
+}
+
+.imgAndUrlWillBeInlineCss{
+    background-repeat: no-repeat !important;
+    background-size: contain !important;
+    background-position: center !important;
+    height: 30px;
+    width: 120px;
+    margin-top: 8px;
 }
