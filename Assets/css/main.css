@@ -56,7 +56,7 @@ min-height: 80vh;
     transition: all 0.3s;
 }
 .leftArrowHighContainer:hover{
-    background: rgba(0,0,0,0.15);
+    background: rgba(18,18,18,1);
 }
 .leftArrowHighContainer:hover
 .anotherDivInSideContainer{
@@ -165,3 +165,11 @@ body{
     width: 120px;
     margin-top: 8px;
 }
+.leftArrowHighContainer {
+    transition: transform 0.5s, opacity 0.35s;
+}
+.rightRowAnimation{
+    transform: translateY(500px);
+    opacity: 0;
+}
+
