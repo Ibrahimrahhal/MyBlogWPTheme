@@ -22,7 +22,7 @@ function setEventsForArrowHighContaineers(selector,anotherSelector){
                 r:'30',
                 easing: 'spring(1, 80, 8, 50)',
                 duration: 200,
-                delay:1900
+                delay:1650
             });
         }
         anime({
