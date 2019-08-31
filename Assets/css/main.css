@@ -53,14 +53,18 @@ min-height: 80vh;
 .anotherDivInSideContainer{
     height: 0px;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     transition: all 0.3s;
 }
 .leftArrowHighContainer:hover{
+    font-weight: lighter;
     background: rgba(18,18,18,1);
 }
 .leftArrowHighContainer:hover
 .anotherDivInSideContainer{
-    height: 60px;
+    height: 220px;
 }
 .textDivInSideContainer .imgAndUrlWillBeInlineCss{
     transition: all 0.3s;
@@ -173,3 +177,45 @@ body{
     opacity: 0;
 }
 
+.svgLearnAboutMe{
+    margin-bottom: 20px;
+    height: 100%;
+    width: auto;
+    opacity: 0;
+    transition: opacity 0.5s ease-out;
+}
+
+.leftArrowHighContainer:hover
+.anotherDivInSideContainer
+.svgLearnAboutMe {
+    opacity: 1;
+}
+
+
+.leftArrowHighContainer
+.anotherDivInSideContainer
+.svgLearnAboutMe 
+.questionMark,
+.leftArrowHighContainer
+.anotherDivInSideContainer
+.svgLearnAboutMe 
+.qustionDot{
+    display: none;
+}
+
+.leftArrowHighContainer:hover
+.anotherDivInSideContainer
+.svgLearnAboutMe 
+.questionMark,
+.leftArrowHighContainer:hover
+.anotherDivInSideContainer
+.svgLearnAboutMe 
+.qustionDot{
+    display: block;
+}
+
+.questionMark{
+    fill: #ffffff !important;
+    stroke: #121212;
+    stroke-width: 15px;
+}

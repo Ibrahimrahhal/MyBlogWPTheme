@@ -5,8 +5,26 @@ $('#menuExitIcon').click(()=>{
     $('#MenuContainer').toggleClass('menuContainerActive');
 });
 function setEventsForArrowHighContaineers(selector,anotherSelector){
+    var animationOfDot;
 
     $(selector).mouseenter(()=>{
+
+        if(selector != 'leftArrowHighContainerLeft'){
+            anime({
+                targets: '.questionMark',
+                strokeDashoffset: [anime.setDashoffset,0],
+                easing: 'easeInOutSine',
+                duration: 1000,
+                delay:700
+              });
+              animationOfDot = anime({
+                targets: '.qustionDot',
+                r:'30',
+                easing: 'spring(1, 80, 8, 50)',
+                duration: 200,
+                delay:1900
+            });
+        }
         anime({
             targets:selector,
             color:'#ffffff',
@@ -15,6 +33,10 @@ function setEventsForArrowHighContaineers(selector,anotherSelector){
         $(anotherSelector).toggleClass('rightRowAnimation');
     });
     $(selector).mouseleave(()=>{
+        if(selector != 'leftArrowHighContainerLeft'){
+            animationOfDot.pause();
+            $('.qustionDot').attr('r',0.5);
+        }
        anime({
            targets:selector,
            color:'#121212',
@@ -22,6 +44,7 @@ function setEventsForArrowHighContaineers(selector,anotherSelector){
        });
        $(anotherSelector).toggleClass('rightRowAnimation');
    });
+
 
 }
 setEventsForArrowHighContaineers('.leftArrowHighContainerLeft','.leftArrowHighContainerRight');
