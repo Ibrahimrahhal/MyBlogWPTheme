@@ -8,8 +8,13 @@ function setEventsForArrowHighContaineers(selector,anotherSelector){
     var animationOfDot;
 
     $(selector).mouseenter(()=>{
-
-        if(selector != 'leftArrowHighContainerLeft'){
+        anime({
+            targets: '.knowledgeChars',
+            strokeDashoffset: [anime.setDashoffset,0],
+            easing: 'easeInOutSine',
+            duration: 1200,
+            delay:100
+          });  
             anime({
                 targets: '.questionMark',
                 strokeDashoffset: [anime.setDashoffset,0],
@@ -24,7 +29,6 @@ function setEventsForArrowHighContaineers(selector,anotherSelector){
                 duration: 200,
                 delay:1650
             });
-        }
         anime({
             targets:selector,
             color:'#ffffff',

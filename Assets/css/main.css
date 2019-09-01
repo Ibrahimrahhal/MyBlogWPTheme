@@ -214,8 +214,31 @@ body{
     display: block;
 }
 
+.leftArrowHighContainer:hover
+.textDivInSideContainerLeft {
+    display: none !important;
+}
+.knowledgeText{
+    display: none;
+}
+.leftArrowHighContainer:hover
+.knowledgeText{
+    display: block;
+}
+
 .questionMark{
     fill: #ffffff !important;
     stroke: #121212;
     stroke-width: 15px;
+}
+.knowledgeChars{
+    fill: #121212;
+    stroke: #ffffff;
+    stroke-width: 1px;
+
+}
+.knowledgeText{
+    height: 55%;
+    width:auto;
+
 }
