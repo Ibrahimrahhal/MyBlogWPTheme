@@ -1,0 +1,41 @@
+body{
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+#particles-js{
+    height: 99vh;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+#heroArea {
+    min-height: 99vh;
+}
+.logoHeader{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 3px #121212 solid;
+}
+.fullLogo{
+    flex-direction: row;
+}
+
+.subscribeButton{
+    padding: 8px 15px;
+    border: solid #121212 2px;
+}
+
+.headerInSingular{
+    background-color: rgba(255,255,255, 0.8)
+    border-bottom: solid 1px rgba(18, 18, 18, 0.2);
+}
+.headerWithNavigation{
+    background-color: rgba(255, 255, 255, 0.8 );
+    box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.15);
+}
