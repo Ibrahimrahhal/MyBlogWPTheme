@@ -39,3 +39,46 @@ body{
     background-color: rgba(255, 255, 255, 0.8 );
     box-shadow: 0px 5px 20px 5px rgba(0,0,0,0.15);
 }
+
+.mainBlogContent{
+    margin: 0 auto;
+    width: 70%;
+    background-color: rgba(255, 255, 255, 0.7);
+    min-height: 600px;
+    position: relative;
+    z-index: -1;
+}
+
+.smallTileMainBlog{
+    opacity: 0.8;
+}
+
+.headerInScrollMode .subscribeButton {
+display: none;
+}
+
+.headerInScrollMode .nameInFullLogo{
+    display: none;
+}
+.headerInScrollMode .fullLogo .logoHeader{
+    border-color: #ffffff;
+}
+@keyframes slideDown{
+    0%{
+        transform: translateY(-101%);
+    }
+    100%{
+        transform: translateY(0);
+    }
+}
+ .headerInScrollMode  {
+    justify-content: center !important;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    background-color: #121212;
+    animation-name: slideDown;
+    animation-duration: 0.5s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-out;
+    }
