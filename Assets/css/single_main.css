@@ -29,7 +29,16 @@ body{
 .subscribeButton{
     padding: 8px 15px;
     border: solid #121212 1px;
+    color: #ffffff;
+    background-color: #121212;
+    cursor: pointer;
+    transition: all 0.4s ease-out;
 }
+.subscribeButton:hover{
+    background-color: #ffffff;
+    color: #121212;
+}
+
 
 .headerInSingular{
     background-color: rgba(255,255,255, 0.8);
@@ -82,3 +91,103 @@ display: none;
     animation-fill-mode: both;
     animation-timing-function: ease-out;
     }
+p{
+    font-family: Rubik;
+}
+
+.nameInFullLogo{
+    font-family: Satisfy;
+    font-size: 1.5rem;
+}
+
+.lineBreak{  
+    height: 1px;
+    background-color: #121212;
+    opacity: 0.4;
+}
+
+
+.writerIcon{
+    background-color: #121212;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+}
+
+.writtenByWord{
+    opacity: 0.6;
+}
+
+.writerName{
+    font-weight: bold;
+}
+.writerPostion{
+    font-size: 0.8rem;
+    opacity: 0.6;
+}
+
+@keyframes pulse {
+    0% {
+      box-shadow: 0 0 0 0 rgba(18,18,18, 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(18,18,18, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(18,18,18, 0);
+    }
+  }
+
+.clapButton{
+    height: 65px;
+    width: 65px;
+    background-color: #121212;
+    border-radius: 50%;
+    box-shadow: 0 0 0 rgba(18,18,18, 0.4);
+    animation: pulse 2s infinite;
+    position: relative;
+}
+
+.clapNumbers{
+    transform: scale(0.01);
+    opacity: 0.4;
+    position: absolute;
+    height: 26px;
+    width: 26px;
+    background-color: #da1f26;
+    color: #ffffff;
+    top: 0;
+    right: 0;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s ease-out;
+
+}
+.clapButton:hover .clapNumbers{
+
+transform: scale(1);
+opacity: 1;
+
+}
+.clapIcon{
+    height: 65%;
+    width: auto;
+}
+.clapIcon path{
+    fill: #ffffff;
+}
+
+.verLineSepForSocialMedia{
+    background-color: #121212;
+    opacity: 0.3;
+    width: 1px;
+    min-height: 66px;
+}
+
+.socialMediaIconForSharing i{
+    font-size: 1.4rem;
+    display: block;
+    margin: 3px 0;
+}
