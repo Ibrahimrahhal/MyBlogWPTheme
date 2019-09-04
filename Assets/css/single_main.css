@@ -103,7 +103,7 @@ p{
 .lineBreak{  
     height: 1px;
     background-color: #121212;
-    opacity: 0.4;
+    opacity: 0.2;
 }
 
 
@@ -190,4 +190,19 @@ opacity: 1;
     font-size: 1.4rem;
     display: block;
     margin: 3px 0;
+}
+
+.upperContainerForBlogThumb{
+    max-width: 300px;
+    background-color: rgb(130,130,130,0.1) ;
+}
+
+.extasLikeClapAndReadTime{
+    display: flex;
+    
+}
+.readingTimeInMiniBlog{
+    color: #ffffff;
+    background-color: #000000;
+    font-size: 0.8rem;
 }
