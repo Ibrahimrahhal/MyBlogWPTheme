@@ -3,6 +3,9 @@ body{
     margin: 0;
     overflow-x: hidden;
 }
+:not(i){
+    font-family: Cairo,sans-serif
+}
 #particles-js{
     height: 99vh;
     width: 100vw;
@@ -69,8 +72,12 @@ display: none;
 .headerInScrollMode .nameInFullLogo{
     display: none;
 }
+.headerInScrollMode .hamburger {
+    display: none !important;
+}
 .headerInScrollMode .fullLogo .logoHeader{
     border-color: #ffffff;
+    margin: 0 !important;
 }
 @keyframes slideDown{
     0%{
@@ -194,7 +201,7 @@ opacity: 1;
 
 .upperContainerForBlogThumb{
     max-width: 300px;
-    background-color: rgb(130,130,130,0.1) ;
+    /* background-color: rgb(130,130,130,0.1) ; */
 }
 
 .extasLikeClapAndReadTime{
@@ -206,3 +213,55 @@ opacity: 1;
     background-color: #000000;
     font-size: 0.8rem;
 }
+.menuNavigationItem{
+    opacity: 0.5;
+    font-weight: 200;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+.menuNavigationItem:hover{
+    opacity: 1;
+    font-weight: 300;
+}
+.hamburger{
+    outline: 0 !important;
+    display: none !important;
+}
+
+@media screen and (max-width:580px){
+    .navigationInSingular{
+        padding: 0 !important;
+        flex-direction: column !important;
+        max-height: 0;
+        transition: max-height 0.8s ease-out; 
+        overflow: hidden;
+
+    }
+    .navigationInSingularActive{
+        max-height: 500px;
+    }    
+    .menuNavigationItem{
+        border-bottom: solid 1px rgba(18, 18, 18, 0.3);
+        padding: 15px 0;
+        display: inline-block;
+        min-width: 200px;
+        
+        text-align: center;
+    }
+    .menuNavigationItemLast{
+        border-bottom-width:  0px !important;
+
+
+    }
+    .subscribeButton{
+        display: none;
+    }
+    .hamburger{
+        display: block !important;
+    }
+
+   .sectionForAuthorNameAndSocialMedia{
+       flex-direction: column !important;
+   }
+    
+}   

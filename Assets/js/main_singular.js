@@ -12,3 +12,10 @@ $(function () {
      
     });
   });
+
+  $(function () {
+$('.hamburger').click(()=>{
+    $('.hamburger').toggleClass('is-active');
+    $('.navigationInSingular').toggleClass('navigationInSingularActive');
+})
+  });
