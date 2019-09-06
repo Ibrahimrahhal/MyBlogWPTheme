@@ -224,6 +224,9 @@ opacity: 1;
     transition: all 0.3s;
     cursor: pointer;
 }
+.blogBody{
+    direction: rtl;
+}
 .menuNavigationItem:hover{
     opacity: 1;
     font-weight: 300;
@@ -234,6 +237,20 @@ opacity: 1;
 }
 
 @media screen and (max-width:580px){
+    .mainBlogContent{
+        width: 90%;
+    }
+    .TitlaMainBlog{
+        font-size: 1.4rem;
+        font-weight: bold;
+    }
+    .smallTileMainBlog{
+        font-size: 1.1rem;
+        margin: 0 !important;
+    }
+    .blogBody{
+        font-size: 0.9rem;
+    }
     .navigationInSingular{
         padding: 0 !important;
         flex-direction: column !important;
