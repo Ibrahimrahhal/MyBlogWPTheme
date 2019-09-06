@@ -82,11 +82,15 @@ body{
     width: 100%;
     transform: translateX(-101%);
     height: 100%;
-    transition:all 0.5s;
+    transition:all 0.7s ease-out;
 }
-.nameAndCircleAnimation:hover 
-.lineForNameAndCircleAnimations{
+
+.lineForNameAndCircleAnimationsMiddle {
     transform: translateX(0%);
+
+}
+.lineForNameAndCircleAnimationsRight {
+    transform: translateX(101%);
 
 }
 @keyframes logo {
