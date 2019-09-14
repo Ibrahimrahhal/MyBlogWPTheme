@@ -1,0 +1,14 @@
+.spaceHero {
+    width: 100%;
+    min-height: 500px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.logoBlog {
+    border: 3px solid #ffffff;
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+}
