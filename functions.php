@@ -139,6 +139,7 @@ function ibrahim_scripts() {
 	if(is_singular()):
 	wp_enqueue_style( 'singleMain', get_template_directory_uri() . '/styles/single_main.css' );
 	endif;
+	wp_enqueue_style( 'footer', get_template_directory_uri() . '/styles/footer.css' );
 
 
 

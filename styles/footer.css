@@ -1,0 +1,10 @@
+.footerContainer {
+    min-height: 350px;
+}
+
+.logoFooter {
+    width: 95px;
+    height: 95px;
+    border-radius: 50%;
+    border: 3px #ffffff solid;
+}

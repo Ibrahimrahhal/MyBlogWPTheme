@@ -1158,3 +1158,35 @@ li {
 .user-select-none {
     user-select: none;
 }
+
+.font-raleway {
+    font-family: Raleway;
+}
+
+.font-size08rem {
+    font-size: 0.9rem;
+}
+
+.color-white {
+    color: #ffffff;
+}
+
+.color-black {
+    color: #121212;
+}
+
+.bg-color-black {
+    background-color: #121212;
+}
+
+.opacity-77 {
+    opacity: 0.77;
+}
+
+.h-10vh {
+    height: 10vh;
+}
+
+.opacity-90 {
+    opacity: 0.9;
+}

@@ -16,9 +16,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
     <title>Ibrahim A. Rahhal</title>
-    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,700|Bitter:400,700|Lalezar|Open+Sans+Condensed:300,700|Rubik|Satisfy&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Cairo:200,300,400,700|Arvo|Bitter:400,700|Lalezar|Open+Sans+Condensed:300,700|Rubik|Raleway:100,200,300,400,700|Satisfy&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.10.2/css/all.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Arvo|Cabin:400,500|Raleway" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.2.0/anime.js">
     </script>
     <script
