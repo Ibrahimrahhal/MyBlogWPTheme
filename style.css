@@ -1129,3 +1129,32 @@ object {
 .font-bitter {
     font-family: Bitter !important;
 }
+
+a {
+    color: #121212;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+.transition3s {
+    transition: all 0.3s;
+}
+
+.scaleOnHover:hover {
+    transform: scale(1.05);
+}
+
+.w-20 {
+    width: 20%;
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.user-select-none {
+    user-select: none;
+}

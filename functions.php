@@ -197,6 +197,7 @@ require get_template_directory() . '/inc/template-functions.php';
  */
 require get_template_directory() . '/inc/customizer.php';
 
+register_nav_menus( array( 'blog' => 'Menu In Blog Page', 'singlePost' => 'menu in single post' ) );
 /**
  * Load Jetpack compatibility file.
  */
