@@ -1187,6 +1187,15 @@ li {
     height: 10vh;
 }
 
+.h-40vh {
+    height: 40vh;
+}
+
 .opacity-90 {
     opacity: 0.9;
+}
+
+ul {
+    margin: 0 !important;
+    padding: 0 !important;
 }

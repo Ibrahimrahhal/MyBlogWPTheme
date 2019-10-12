@@ -11,12 +11,14 @@ echo (get_template_directory_uri() . '/Assets/Images/blogPageHero.png');
 <div class="logoBlog">
 </div>
 
+<div class="h-40vh d-flex align-items-center justify-content-center">
 <h1 class="allHeadingContainerBlog">
 The Universe is Made of Stories,
 <span class="allHeadingContainerBlogSecondLine">
 So Here’s Mine
 </span>
 </h1>
+</div>
 
 </div>
 <div style="height: 10vh; background-color:#121212;">
@@ -49,7 +51,8 @@ Choose You Today's Fast Read.
         if ( $query->have_posts() ) : while ( $query->have_posts() ) : $query->the_post(); ?>
         <a href="<?php the_permalink(); ?>" class="swiper-slide topLevelCardContainer mt-4 transition3s scaleOnHover">
         <div class="smallCircleForReadtime">
-            8
+        <?php 
+    the_field('reading_time'); ?>
             <span>
             Min
             </span>

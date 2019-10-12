@@ -12,9 +12,8 @@ get_header();
 		?>
     </h1>
     <h1 class=" TitlaMainBlog TitlaMainBlogAR" style="text-align:right;">
-        ديد بول هل ان كول
 		<?php 
-			// the_field('arabicTitle');
+			the_field('name_in_arabic');
 		?>
     </h1>
 
@@ -170,42 +169,35 @@ get_header();
         <h5> <i class="fas fa-star mx-1" style="font-size: 1.4rem"></i>Also By Me</h5>
 
         <div class="containerForMoreBlogs mt-5 d-flex justify-content-center align-items-center">
-            <div class="upperContainerForBlogThumb shadow mx-2 rounded px-4 py-5">
-                <img class="rounded" src="https://wallpaperplay.com/walls/full/2/a/2/124948.jpg" height="auto" width="100%"/>
-                <h6 class="titleOfSuggestedBlog font-weight-bold my-2">Is Levi Ackerman That Hot ?</h6>
+        <?php
+ 
+                // The Query
+                $the_query = new WP_Query( array('post_type'=>'post','posts_per_page'=>'3') );
+                
+                // The Loop
+                if ( $the_query->have_posts() ):
+                    while ( $the_query->have_posts() ):
+                        $the_query->the_post();
+                ?>
+            <a href="<?php the_permalink(); ?>" class="upperContainerForBlogThumb shadow mx-2 rounded px-4 py-5">
+            <div class="postThumbList" style="background-image:url('<?php
+                echo get_the_post_thumbnail_url();
+                ?>');"> 
+    </div>
+                <h6 class="titleOfSuggestedBlog font-weight-bold my-2"><?php the_title(); ?></h6>
                 <div class="extasLikeClapAndReadTime mt-4 d-flex align-items-center justify-content-between">
                 <div class="readingTimeInMiniBlog px-2 py-1 rounded">
-                   8 mins
+                <?php 
+                the_field('reading_time'); ?>
+                Min
                 </div>
                 <div>
                     20 <i class="fas fa-heart"></i>
                 </div>
                 </div>
-            </div>
-            <div class="upperContainerForBlogThumb shadow mx-2 rounded px-4 py-5">
-                    <img class="rounded" src="https://wallpaperplay.com/walls/full/2/a/2/124948.jpg" height="auto" width="100%"/>
-                    <h6 class="titleOfSuggestedBlog font-weight-bold my-2">Is Levi Ackerman That Hot ?</h6>
-                    <div class="extasLikeClapAndReadTime mt-4 d-flex align-items-center justify-content-between">
-                    <div class="readingTimeInMiniBlog px-2 py-1 rounded">
-                       8 mins
-                    </div>
-                    <div>
-                        20 <i class="fas fa-heart"></i>
-                    </div>
-                    </div>
-                </div>
-            <div class="upperContainerForBlogThumb shadow mx-2 rounded px-4 py-5">
-                    <img class="rounded" src="https://wallpaperplay.com/walls/full/2/a/2/124948.jpg" height="auto" width="100%"/>
-                    <h6 class="titleOfSuggestedBlog font-weight-bold my-2">Is Levi Ackerman That Hot ?</h6>
-                    <div class="extasLikeClapAndReadTime mt-4 d-flex align-items-center justify-content-between">
-                    <div class="readingTimeInMiniBlog px-2 py-1 rounded">
-                       8 mins
-                    </div>
-                    <div>
-                        20 <i class="fas fa-heart"></i>
-                    </div>
-                    </div>
-                </div>
+            </a>
+                    <?php  endwhile; endif;?>
+
         </div>
     </div>
 </main>

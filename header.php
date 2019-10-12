@@ -58,10 +58,14 @@
 
 
             <div class="navigationInSingular px-3 py-3 d-flex align-items-center justify-content-center ">
-                <span class="mx-4 menuNavigationItem">Home</span>
-                <span class="mx-4 menuNavigationItem">My Website</span>
-                <span class="mx-4 menuNavigationItem">About Me</span>
-                <span class="mx-4 menuNavigationItem menuNavigationItemLast">Get In Touch</span>
+            <?php
+                if ( has_nav_menu( 'singlePost' ) ) {
+                    wp_nav_menu( array(
+                        'menu'=>'singlePost',
+                        'menu_class'=>'singlePostMenu',
+
+                    ) );
+                } ?>
             </div>
 <?php endif  ?>
 </div>

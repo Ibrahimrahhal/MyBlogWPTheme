@@ -1,5 +1,6 @@
 .footerContainer {
-    min-height: 350px;
+    min-height: 200px;
+    margin-top: 7rem !important;
 }
 
 .logoFooter {
